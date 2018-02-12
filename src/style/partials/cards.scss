@@ -2,9 +2,10 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.card-technologies {
+.card-project {
   flex-basis: 33.3333%;
   overflow: hidden;
   position: relative;
@@ -98,5 +99,17 @@
   }
   span {
     color: #fff;
+  }
+}
+
+.card-order {
+  flex-basis: 33.333%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .company-logo {
+    margin-bottom: 30px;
   }
 }

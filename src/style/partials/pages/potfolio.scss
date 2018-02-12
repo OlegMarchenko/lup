@@ -1,0 +1,53 @@
+#portfolio {
+  background: $bg-grey;
+}
+
+.filter-holder {
+  display: flex;
+  label {
+    font-family: $bebasBold;
+    font-size: 18px;
+    padding-right: 30px;
+    text-transform: uppercase;
+  }
+  select {
+    padding: 6px 10px;
+    border: 2px solid #ff935c;
+    font-family: $bebasBold;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.portfolio-nav {
+  display: flex;
+  li {
+    border-radius: 15px;
+    margin: 0 5px;
+    &:first-child {
+      margin: 0 5px 0 15px;
+    }
+    &:last-child {
+      margin: 0 0 0 5px;
+    }
+    a {
+      width: 90px;
+      height: 30px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $title-color;
+      font-family: $bebasBold;
+      text-transform: uppercase;
+      border-radius: 15px;
+      transition: .2s all;
+      &:hover,
+      &.active {
+        color: #fff;
+        background: $bg-orange;
+      }
+    }
+  }
+}
+

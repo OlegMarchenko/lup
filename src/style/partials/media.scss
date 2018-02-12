@@ -1,4 +1,4 @@
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
   .full-width-banner {
     min-height: 500px;
     background-size: 1600px 500px;
@@ -7,7 +7,8 @@
     background-size: 660px;
   }
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
   .section-title {
     h2 {
       font-size: 32px;
@@ -43,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .section-title {
     padding-bottom: 15px;
   }
@@ -96,7 +97,7 @@
       font-size: 32px;
     }
   }
-  .card-technologies {
+  .card-project {
     h2 {
       font-size: 30px;
     }
@@ -111,9 +112,32 @@
     transform: scale(0.7);
     margin: 0 0 0 75%;
   }
+
+  /*PORTFOLIO PAGE*/
+
+  .filter-holder {
+    flex-wrap: wrap;
+    > div {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .portfolio-nav {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      margin: 0;
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .container {
     padding: 0 15px;
   }
@@ -175,11 +199,25 @@
       margin-bottom: 15px;
       &:last-child {
         margin-bottom: 0;
+        min-height: 300px;
       }
     }
   }
   .arrow-btn {
     transform: scale(1);
     margin: 0 0 0 80%;
+  }
+
+  /*PORTFOLIO PAGE*/
+
+  .filter-holder {
+    > div {
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .portfolio-nav {
+    display: none;
   }
 }
