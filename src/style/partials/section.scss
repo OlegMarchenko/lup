@@ -1,0 +1,77 @@
+.section {
+  padding: 40px 0;
+}
+
+.section-inner {
+  padding: 175px 0 200px 0;
+
+}
+
+.section-title {
+  padding-bottom: 40px;
+  h2 {
+    font-size: $large;
+    font-family: $bebasBold;
+    color: $title-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.title-inner {
+  h2 {
+    font-size: 33px;
+    color: $title-color;
+    font-family: $bebasBold;
+  }
+}
+
+.secondary-title {
+  font-size: $small;
+  text-transform: uppercase;
+  font-family: $bebasBold;
+  span {
+    padding: 8px 10px;
+  }
+}
+
+.fz-30 {
+  font-size: 30px !important;
+}
+
+.color-white {
+  color: $white !important;
+}
+
+.bg-grey {
+  background: $bg-grey;
+}
+
+.bg-dark {
+  background: $bg-dark;
+}
+
+.align-left {
+  h2 {
+    text-align: left;
+  }
+}
+
+.grey-color {
+  color: $title-color;
+}
+
+.description {
+  > p {
+    margin-bottom: 35px;
+    font-size: $small;
+    color: $base-text-color;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.background-dark {
+  background: $bg-dark;
+}

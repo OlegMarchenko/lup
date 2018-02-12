@@ -1,0 +1,102 @@
+.projects-holder {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-technologies {
+  flex-basis: 33.3333%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  .mask {
+    background-color: #fff;
+    transition: all 0.5s linear;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 10px 10px 30px;
+  }
+  img {
+    display: block;
+    position: relative;
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+    width: 100%;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: $middle;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    background: transparent;
+    transform: scale(0);
+    color: $bg-orange;
+    transition: all 0.5s linear;
+    opacity: 0;
+    line-height: 1;
+    font-family: $bebasBold;
+  }
+  p {
+    font-size: 15px;
+    position: relative;
+    color: $base-text-color;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
+
+  &:hover {
+    img {
+      transform: scale(10);
+      opacity: 0;
+    }
+    .mask {
+      opacity: 1;
+      z-index: 5;
+    }
+    h2,
+    p {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .5);
+  h3 {
+    font-family: $bebasBold;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  span {
+    color: #fff;
+  }
+}

@@ -1,0 +1,185 @@
+@media screen and (max-width: 1600px){
+  .full-width-banner {
+    min-height: 500px;
+    background-size: 1600px 500px;
+  }
+  .section-buying-selling {
+    background-size: 660px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .section-title {
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .description {
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  .holder-introduction-section {
+    .introduction-image {
+      flex-basis: 36%;
+    }
+  }
+  .full-width-banner {
+    background-size: 1024px 400px;
+    min-height: 400px;
+  }
+  .section-buying-selling {
+    background-size: 410px;
+  }
+  .section-inner {
+    padding: 40px 0 50px 0;
+  }
+  .holder-section-contact {
+    > div {
+      > div {
+        padding: 120px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .section-title {
+    padding-bottom: 15px;
+  }
+  .description {
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  .section-title {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .full-width-banner {
+    background-size: 768px 300px;
+    min-height: 300px;
+  }
+  .section-buying-selling {
+    background-size: 323px;
+  }
+
+  .title-inner {
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .secondary-title {
+    font-size: 20px;
+  }
+  .holder-section-contact {
+    > div {
+      > div {
+        padding: 100px 0;
+      }
+    }
+  }
+  .form-btn {
+    height: 36px;
+  }
+  .default-btn,
+  .default-btn input[type=submit] {
+    font-size: 16px;
+  }
+  .default-btn {
+    padding: 9px 42px;
+  }
+  .card-description {
+    h3 {
+      font-size: 32px;
+    }
+  }
+  .card-technologies {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      -webkit-line-clamp: 3;
+    }
+    .mask {
+      padding: 10px 10px 10px 20px;
+    }
+  }
+  .arrow-btn {
+    transform: scale(0.7);
+    margin: 0 0 0 75%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .container {
+    padding: 0 15px;
+  }
+  .holder-introduction-section {
+    position: relative;
+    .introduction-image {
+      position: absolute;
+    }
+  }
+  .description {
+    position: relative;
+    z-index: 2;
+    flex-basis: 100%;
+  }
+  .full-width-banner {
+    background-size: 375px 130px;
+    min-height: 130px;
+  }
+  .holder-technologies {
+    flex-wrap: wrap;
+    > div {
+      flex-basis: 33%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .holder-section-static {
+    flex-direction: column;
+    > div {
+      flex-basis: 100%;
+    }
+  }
+  .holder-section-contact {
+    flex-direction: column;
+    > div {
+      flex-basis: 100%;
+      > div {
+        padding: 70px 0;
+        > div {
+          &:last-child {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .holder-right-col {
+      &::before {
+        left: -99999px;
+      }
+    }
+  }
+  input[type=tel] {
+    width: 100%;
+  }
+  .projects-holder {
+    flex-wrap: wrap;
+    > div {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .arrow-btn {
+    transform: scale(1);
+    margin: 0 0 0 80%;
+  }
+}

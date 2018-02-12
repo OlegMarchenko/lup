@@ -1,0 +1,71 @@
+.default-btn {
+  color: $btn-color;
+  font-size: $fz-18;
+  padding: 11px 42px;
+  background: $bg-orange;
+  text-transform: uppercase;
+  font-family: $bebasBold;
+  position: relative;
+  box-shadow: 0 0 rgba(255, 151, 89, .5) !important;
+  transition: all .2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: '';
+    background: transparent;
+    border: 1px solid $bg-orange;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 5px 5px rgba(255, 151, 89, .5) !important;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    &::before {
+      transition: all .2s ease-in-out;
+      top: -5px;
+      left: -5px;
+    }
+    input[type="submit"] {
+      color: $white;
+    }
+  }
+  input[type="submit"] {
+    font-size: $fz-18;
+    color: $btn-color;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    font-family: $bebasBold;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.form-btn {
+  padding: 0;
+  width: 113px;
+  height: 42px;
+}
+
+
+.arrow-btn {
+  width: 44px;
+  height: 44px;
+  background: url("../img/right-arrow-btn.png") center center no-repeat;
+  margin: 0 0 0 80%;
+  transition: .3s all;
+}
+

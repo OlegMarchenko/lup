@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font: 16px/1.6 'Roboto', sans-serif;
+  font-weight: 300;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.container-inner {
+  max-width: 1370px;
+}
+
+main {
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+* a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+form,
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+

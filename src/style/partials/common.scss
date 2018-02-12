@@ -1,0 +1,139 @@
+
+/*INTRODUCTION SECTION*/
+
+.introduction-section {
+  background: $bg-grey;
+  padding-bottom: 80px;
+}
+
+.holder-introduction-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .introduction-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.holder-desc {
+  display: flex;
+}
+
+.description {
+  flex-basis: 52%;
+}
+
+.section-banner {
+  margin-top: -40px;
+}
+
+.full-width-banner {
+  min-height: 630px;
+  background: url("../img/bg-full-width.png") center top no-repeat;
+  background-size: 1920px 630px;
+  width: 100%;
+}
+
+/*SECTION BUYING AND SELLING*/
+
+.section-buying-selling {
+  background: url("../img/buyingselling.png") right center no-repeat;
+  border-bottom: $section-border;
+}
+
+/*SECTION STATICS*/
+
+.holder-section-static {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    &:first-child {
+      justify-content: flex-start;
+      flex-basis: 40%;
+    }
+    &:last-child {
+      flex-direction: column;
+      flex-basis: 50%;
+    }
+  }
+}
+
+/*SECTION TECHNOLOGY STACK*/
+
+.holder-technologies {
+  display: flex;
+  justify-content: center;
+  > div {
+    flex-basis: 135px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.technology-title {
+  color: $white;
+}
+
+/*SECTION CONTACT*/
+
+.section-contact {
+  border-bottom: $section-border;
+}
+
+.holder-section-contact {
+  display: flex;
+  > div {
+    flex-basis: 50%;
+    > div {
+      display: flex;
+      flex-direction: column;
+      padding: 150px 0;
+      > div {
+        margin-bottom: 27px;
+        &:first-child {
+          margin-bottom: 15px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .right-col {
+    align-items: flex-end;
+  }
+  .holder-right-col {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: -99999px;
+      height: 100%;
+      background: $bg-grey;
+      z-index: -1;
+    }
+  }
+}
+
+.callback {
+  .item {
+    display: flex;
+  }
+}
+
+input[type="tel"] {
+  border: 1px solid #c2c2c2;
+  padding: 5px 5px 5px 7px;
+  margin-right: 13px;
+  &:focus {
+    outline: 2px solid #ff935c;
+    background: #fff;
+  }
+}
