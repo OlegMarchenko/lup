@@ -31,20 +31,20 @@
                             <p>
                                 <label for="portfolio-select">Filer By:</label>
                                 <select id="portfolio-select">
-                                    <option selected value="Крокодил Гена">Business engineering</option>
-                                    <option value="Gamble">Gamble website</option>
-                                    <option value="webMobile">Web & Mobile application</option>
-                                    <option value="Web">Web application</option>
-                                    <option value="e-commerce">E-commerce website</option>
+                                    <option id="all" selected value="Business engineering">Business engineering</option>
+                                    <option id="gamble" value="gamble">Gamble website</option>
+                                    <option id="class-mobile" value="mobile-web">Web & Mobile application</option>
+                                    <option id="web" value="Web application">Web application</option>
+                                    <option id="e-commerce" value="e-commerce">E-commerce website</option>
                                 </select>
                             </p>
                         </form>
                     </div>
                     <ul class="portfolio-nav">
-                        <li><a href="#" class="active">all</a></li>
+                        <li><a href="#" class="all active">all</a></li>
                         <li><a href="#">e-commerce</a></li>
                         <li><a href="#">health care</a></li>
-                        <li><a href="#">gambling</a></li>
+                        <li><a href="#" class="gamb">gambling</a></li>
                         <li><a href="#">real estate</a></li>
                         <li><a href="#">logistics</a></li>
                         <li><a href="#">finance</a></li>
@@ -56,7 +56,7 @@
         <!--SECTION CARDS PORTFOLIO-->
         <section class="section section-projects">
             <div class="projects-holder">
-                <div class="card-project">
+                <div class="card-project web-app">
                     <img src="img/sigma.jpg" alt="SIGMA"/>
                     <div class="mask">
                         <h2>SIGMA ONLINE</h2>
@@ -70,7 +70,7 @@
                         <span>Web application</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project mobile-app">
                     <img src="img/resemary.jpg" alt="ROSEMARY"/>
                     <div class="mask">
                         <h2>Rosemary</h2>
@@ -84,7 +84,7 @@
                         <span>Mobile application</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project gamble">
                     <img src="img/candy-skins.jpg" alt="CANDY SKINS"/>
                     <div class="mask">
                         <h2>CANDY SKINS</h2>
@@ -98,7 +98,8 @@
                         <span>Gamble website</span>
                     </div>
                 </div>
-                <div class="card-project">
+
+                <div class="card-project gamble">
                     <img src="img/voltic.jpg" alt="VOLTIC"/>
                     <div class="mask">
                         <h2>CS:GO VOLTIC</h2>
@@ -110,7 +111,7 @@
                         <span>Gamble website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project mobile-web">
                     <img src="img/cashtransfer.jpg" alt="CRASHTRANSFER"/>
                     <div class="mask">
                         <h2>CRASHTRANSFER</h2>
@@ -124,7 +125,7 @@
                         <span>Mobile website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project mobile-app">
                     <img src="img/firenze-pulizia-strade.jpg" alt="FIRENZE-PILIZIA-STRADE"/>
                     <div class="mask">
                         <h2>FIRENZE-PILIZIA-STRADE</h2>
@@ -138,7 +139,8 @@
                         <span>Mobile application</span>
                     </div>
                 </div>
-                <div class="card-project">
+
+                <div class="card-project e-commerce">
                     <img src="img/playersbid.jpg" alt="PLAYERSBID"/>
                     <div class="mask">
                         <h2>PLAYERSBID</h2>
@@ -150,7 +152,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project e-commerce">
                     <img src="img/luminarc.jpg" alt="LUMINARC"/>
                     <div class="mask">
                         <h2>LUMINARC</h2>
@@ -162,7 +164,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project mobile-app">
                     <img src="img/mi-farmacia.jpg" alt="MI-FARMACIA"/>
                     <div class="mask">
                         <h2>MI-FARMACIA</h2>
@@ -176,7 +178,8 @@
                         <span>Mobile application</span>
                     </div>
                 </div>
-                <div class="card-project">
+
+                <div class="card-project e-commerce">
                     <img src="img/baliprorent.jpg" alt="BALIPRORENT"/>
                     <div class="mask">
                         <h2>BALIPRORENT</h2>
@@ -188,7 +191,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project e-commerce">
                     <img src="img/get-eat.jpg" alt="GET-EAT"/>
                     <div class="mask">
                         <h2>GET-EAT</h2>
@@ -200,7 +203,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project mobile-app">
                     <img src="img/mosenergo.jpg" alt="MOSENERGO"/>
                     <div class="mask">
                         <h2>MOSENERGO</h2>
@@ -214,7 +217,8 @@
                         <span>Mobile application</span>
                     </div>
                 </div>
-                <div class="card-project">
+
+                <div class="card-project e-commerce">
                     <img src="img/craftfoxes.jpg" alt="CRAFTFOXES"/>
                     <div class="mask">
                         <h2>CRAFTFOXES</h2>
@@ -226,7 +230,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project e-commerce">
                     <img src="img/overmoth.jpg" alt="OVERMOUTH"/>
                     <div class="mask">
                         <h2>OVERMOUTH</h2>
@@ -238,7 +242,7 @@
                         <span>E-commerce website</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project web-app">
                     <img src="img/odrex.jpg" alt="ODREX"/>
                     <div class="mask">
                         <h2>ODREX</h2>
@@ -250,7 +254,8 @@
                         <span>Web application</span>
                     </div>
                 </div>
-                <div class="card-project">
+
+                <div class="card-project mobile-app">
                     <img src="img/evarthdrive.jpg" alt="EVART DRIVE"/>
                     <div class="mask">
                         <h2>EVART DRIVE</h2>
@@ -262,7 +267,7 @@
                         <span>Mobile application</span>
                     </div>
                 </div>
-                <div class="card-project">
+                <div class="card-project e-commerce">
                     <img src="img/vhn.jpg" alt="VHN"/>
                     <div class="mask">
                         <h2>VHN.UA</h2>
@@ -295,5 +300,6 @@
 
 </div>
 
+<script src="js/main.js"></script>
 </body>
 </html>

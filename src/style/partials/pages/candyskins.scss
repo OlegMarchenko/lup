@@ -1,0 +1,14 @@
+#candySkins {
+  .holder-introduction-section {
+    justify-content: flex-start;
+    .introduction-image {
+      margin-left: 15%;
+    }
+  }
+  .full-width-banner {
+    background: url("../img/bg-full-width-candyskins.png") center top no-repeat;
+  }
+  .section-buying-selling {
+    background: url("../img/buyingselling-candyskins.png") right center no-repeat;
+  }
+}
