@@ -27,7 +27,6 @@ body {
 
 main {
   flex: 1 0 auto;
-  overflow: hidden;
 }
 
 img {
@@ -71,6 +70,10 @@ li {
 
 p {
   margin: 0;
+}
+
+.footer {
+  margin-top: 800px;
 }
 
 

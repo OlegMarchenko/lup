@@ -17,6 +17,23 @@
   }
 }
 
+.holder-introduction-section-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .description {
+    flex-basis: 70%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .decor-image {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .holder-desc {
   display: flex;
 }
