@@ -3,6 +3,8 @@ $(document).ready(function () {
     // Mask for callback input
     $('.phone').mask('+00(000)000-00-00');
 
+
+
     //Portfolio selector
     var types = ['gamble', 'mobile-web', 'mobile-app', 'e-commerce', 'web-app'];
     $('#portfolio-select').on('change', (function(e){
@@ -25,5 +27,10 @@ $(document).ready(function () {
 
     }));
 
+
+    /*Stop roulette animation*/
+    $('.roulette').hover(function () {
+        $(this).stop(true).fadeTo(200, 1)
+    })
 
 });

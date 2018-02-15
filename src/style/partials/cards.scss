@@ -13,7 +13,7 @@
 }
 
 .card-project {
-  flex-basis: 33.3333%;
+  flex-basis: 33.33334%;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -103,6 +103,7 @@
     color: #fff;
     font-size: 36px;
     text-transform: uppercase;
+    max-width: 250px;
   }
   span {
     color: #fff;
@@ -119,4 +120,8 @@
   .company-logo {
     margin-bottom: 30px;
   }
+}
+
+.bg-transparent {
+  background: transparent;
 }

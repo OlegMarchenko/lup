@@ -1,3 +1,6 @@
+.section-implemented-project {
+  background: $bg-grey;
+}
 .holder-tech {
   display: flex;
   justify-content: space-between;
@@ -58,9 +61,11 @@
 }
 
 .roulette {
+  border-radius: 50%;
   animation: rotating 20s linear infinite;
   &:hover {
-    animation: rotating 4s linear infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
   }
 }
 
@@ -101,7 +106,6 @@
   align-items: center;
   background: $dark-grey;
   border-radius: 50%;
-  /*box-shadow: inset 0 0 0 12px #fff;*/
   position: relative;
 
 }
@@ -125,6 +129,7 @@
     transform-origin: 0% 100%;
     border: 5px solid $dark-border;
     transition: .3s ease-in-out;
+    pointer-events: none;
     &:first-child {
       transform: rotate(0deg) skewY(-60deg);
     }
@@ -182,20 +187,27 @@
   border: 5px solid $dark-border;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .text {
   position: absolute;
   left: -90%;
   width: 200%;
-  top: 34%;
-  height: 91%;
+  top: 16%;
+  height: 124%;
   text-align: center;
+  -webkit-transform: skewY(60deg) rotate(15deg);
   transform: skewY(60deg) rotate(15deg);
-  padding-top: 20px;
+  padding-top: 100px;
   font-weight: 400;
   font-size: 20px;
   color: #fff;
+  pointer-events: visible;
+  cursor: pointer;
   img {
     position: absolute;
     bottom: 56%;
