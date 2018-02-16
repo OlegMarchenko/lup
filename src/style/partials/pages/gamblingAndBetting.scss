@@ -62,11 +62,11 @@
 
 .roulette {
   border-radius: 50%;
-  /*animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
   &:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
-  }*/
+  }
 }
 
 @-webkit-keyframes roulette /* Safari and Chrome */ {
