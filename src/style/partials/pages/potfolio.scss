@@ -21,18 +21,16 @@
 
 .portfolio-nav {
   display: flex;
+  flex-wrap: wrap;
   li {
     border-radius: 15px;
-    margin: 0 5px;
-    &:first-child {
-      margin: 0 5px 0 15px;
-    }
+    margin: 0 10px 5px 10px;
+    min-width: 90px;
     &:last-child {
-      margin: 0 0 0 5px;
+      margin: 0 0 5px 10px;
     }
     a {
-      min-width: 90px;
-      height: 30px;
+      padding: 4px 13px;
       background: #fff;
       display: flex;
       justify-content: center;
@@ -40,7 +38,7 @@
       color: $title-color;
       font-family: $bebasBold;
       text-transform: uppercase;
-      border-radius: 15px;
+      border-radius: 17px;
       transition: .2s all;
       &:hover,
       &.active {

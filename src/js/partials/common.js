@@ -6,38 +6,49 @@ $(document).ready(function () {
     //===================================================================
 
 
-    //Portfolio selector
-    var types = ['gamble', 'mobile-app', 'e-commerce', 'web-app'];
-    $('#portfolio-select').on('change', (function (e) {
-        var value = e.target.value;
-        types.forEach(function (type) {
-            var cards;
-            if (type === value || value === 'all') {
-                cards = type === 'all' ? $('.card-project')  : $(`.${type}`);
-                cards.each(function (index, card) {
-                    card.style.display = 'block';
-                })
-            } else {
-                //cards = document.getElementsByClassName(type);
-                cards = $('.' + type);
-                cards.each(function (index, card) {
-                    card.style.display = 'none';
-                })
-            }
-        })
+    // Portfolio selector
 
-    }));
+    let navChange = function (value) {
+        $('#portfolio .card-project')
+            .each(function () {
+                let $card = $(this);
 
-    var navLinks = ['active', 'commerce', 'health', 'gambling', 'estate', 'logistics', 'finance'];
-    $('.portfolio-nav a').on('click', function (cls) {
-        var clsName = cls.target.className;
-        navLinks.forEach(function (link) {
+                if ($card.hasClass(value) || value === 'all') {
+                    $card.css({
+                        'display': 'block'
+                    })
+                } else {
+                    $card.css({
+                        'display': 'none'
+                    })
+                }
+            });
+
+        $('.portfolio-nav li a')
+            .each(function () {
+                let $a = $(this);
+
+                if ($a.data('category') === value) {
+                    $a.addClass('active');
+                } else {
+                    $a.removeClass('active');
+                }
+            });
+    };
+
+    $('#portfolio-select').on('change', function (e) {
+        navChange(e.target.value);
+    });
 
 
-        });
-        console.log(clsName);
 
-    })
+    $('.portfolio-nav a').on('click', function () {
+        let value = $(this).data('category');
+
+        $('#portfolio-select').val(value);
+
+        navChange(value);
+    });
 
 
     //===================================================================
