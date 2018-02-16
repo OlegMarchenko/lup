@@ -183,6 +183,28 @@
   .holder-section-roulette {
     transform: translate(-50%,15%);
   }
+
+  .section-technologies {
+    overflow: hidden;
+    padding-top: 0;
+  }
+
+  .holder-tech {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    > div {
+      flex-basis: 100%;
+    }
+    .used-technologies {
+      margin-bottom: 40px;
+      &::before {
+        top: 0;
+        right: -9999px;
+        bottom: 0;
+        left: -9999px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -299,6 +321,13 @@
       width: 17px;
       bottom: 54%;
       right: 47%;
+    }
+  }
+  #gamblingBetting {
+    .holder-introduction-section-inner {
+      .description {
+        flex-basis: 100%;
+      }
     }
   }
 }
