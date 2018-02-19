@@ -6,6 +6,13 @@
   .section-buying-selling {
     background-size: 660px !important;
   }
+  #realEstate {
+    .section-statics {
+      padding-top: 100px;
+      background: url("../img/selling-img-realestate.png") left bottom -10px no-repeat;
+      background-size: 600px 270px;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -60,6 +67,11 @@
   }
   .holder-section-roulette {
     transform: translate(-50%, 16%);
+  }
+  #realEstate .section-statics {
+    padding-top: 70px;
+    background: url(../img/selling-img-realestate.png) left bottom -10px no-repeat;
+    background-size: 460px 195px;
   }
 }
 
