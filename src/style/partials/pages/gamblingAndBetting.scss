@@ -215,4 +215,36 @@
   }
 }
 
+.holder-dl-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  > div {
+    padding: 15px;
+    flex-basis: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > div {
+      &:first-child {
+        margin-bottom: 10px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+  .default-btn {
+    padding: 3px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
