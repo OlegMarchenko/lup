@@ -4,14 +4,7 @@
     background-size: 1600px 500px !important;
   }
   .section-buying-selling {
-    background-size: 660px !important;
-  }
-  #realEstate {
-    .section-statics {
-      padding-top: 100px;
-      background: url("../img/selling-img-realestate.png") left bottom -10px no-repeat;
-      background-size: 600px 270px;
-    }
+    background-size: 550px !important;
   }
 }
 
@@ -68,10 +61,15 @@
   .holder-section-roulette {
     transform: translate(-50%, 16%);
   }
-  #realEstate .section-statics {
-    padding-top: 70px;
-    background: url(../img/selling-img-realestate.png) left bottom -10px no-repeat;
-    background-size: 460px 195px;
+  /*realestate page*/
+  .house {
+    width: 410px;
+    .house-middle {
+      width: 251px;
+    }
+    .house-bottom {
+      left: 178px;
+    }
   }
 }
 
@@ -215,6 +213,19 @@
         bottom: 0;
         left: -9999px;
       }
+    }
+  }
+  .house {
+    width: 340px;
+    .house-middle {
+      width: 210px;
+      top: 27px;
+      left: 62px;
+    }
+    .house-bottom {
+      left: 150px;
+      width: 40px;
+      top: 80px;
     }
   }
 }

@@ -53,5 +53,27 @@ $(document).ready(function () {
 
     //===================================================================
 
+    new WOW().init();
+
+    //Animation
+
+    function animate(element, animation) {
+        $(element).addClass('wow ' + animation);
+      var wait = setTimeout(function () {
+          $(element).removeClass('wow ' + animation);
+      }, 2000)
+    }
+
+    $('.section-title').addClass('wow jackInTheBox') ;
+
+    $('.card-order .ww').addClass('wow pulse infinite');
+
+    /*$('.form-btn').hover(function () {
+        animate('.phone', 'shake');
+        setTimeout(function () {
+            $('phone').css('visibility', 'hidden');
+        }, 2000);
+        return false;
+    });*/
 
 });
