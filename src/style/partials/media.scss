@@ -6,6 +6,27 @@
   .section-buying-selling {
     background-size: 550px !important;
   }
+
+  /*logistics page*/
+  .section-logist {
+    padding: 110px 0 130px;
+    background-size: 650px;
+  }
+
+  /*health care page*/
+  .section-health {
+    padding: 80px 0 60px;
+    background-size: 655px;
+  }
+
+  /*ecommerce page*/
+  .section-ecomm {
+    padding: 80px 0 90px 0;
+    background-size: 1600px;
+    .holder-introduction-section-inner .description {
+      flex-basis: 60%;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -61,6 +82,7 @@
   .holder-section-roulette {
     transform: translate(-50%, 16%);
   }
+
   /*realestate page*/
   .house {
     width: 410px;
@@ -70,6 +92,23 @@
     .house-bottom {
       left: 178px;
     }
+  }
+
+  /*logostics page*/
+  .section-logist {
+    padding: 70px 0 90px;
+    background-size: 450px;
+  }
+
+  /*health care page*/
+  .section-health {
+    background-size: 480px;
+  }
+
+  /*ecommerce page*/
+  .section-ecomm {
+    padding: 60px 0 40px 0;
+    background-size: 1270px;
   }
 }
 
@@ -191,7 +230,7 @@
   }
 
   .holder-section-roulette {
-    transform: translate(-50%,15%);
+    transform: translate(-50%, 15%);
   }
 
   .section-technologies {
@@ -227,6 +266,24 @@
       width: 40px;
       top: 80px;
     }
+  }
+  /*logistics page*/
+  .section-logist {
+    padding: 50px 0 50px;
+    background-size: 340px;
+    background-position: bottom -30px left 15px;
+  }
+
+  /*health care page*/
+  .section-health {
+    padding: 50px 0;
+    background-size: 360px;
+  }
+
+  /*ecommerce page*/
+  .section-ecomm {
+    padding: 40px 0;
+    background-size: 1030px;
   }
 }
 
@@ -352,5 +409,15 @@
         flex-basis: 100%;
       }
     }
+  }
+
+  .holder-dl-portfolio {
+    > div {
+      flex-basis: 170px;
+    }
+  }
+
+  .section-ecomm .holder-introduction-section-inner .description {
+    flex-basis: 100%;
   }
 }
