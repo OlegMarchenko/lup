@@ -235,17 +235,17 @@
 
   .section-technologies {
     overflow: hidden;
-    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .holder-tech {
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     > div {
       flex-basis: 100%;
     }
     .used-technologies {
-      margin-bottom: 40px;
+      margin-top: 40px;
       &::before {
         top: 0;
         right: -9999px;
@@ -294,7 +294,7 @@
   .holder-introduction-section {
     position: relative;
     .introduction-image {
-      position: absolute;
+      display: none;
     }
   }
   .description {
@@ -303,7 +303,7 @@
     flex-basis: 100%;
   }
   .full-width-banner {
-    background-size: 576px 180px !important;
+    background-size: contain !important;
     min-height: 180px !important;
   }
   .holder-technologies {
@@ -417,7 +417,45 @@
     }
   }
 
-  .section-ecomm .holder-introduction-section-inner .description {
+  .section-ecomm .holder-introduction-section-inner .description,
+  .holder-introduction-section-inner .description {
     flex-basis: 100%;
+  }
+  .section-buying-selling,
+  .section-ecomm,
+  .section-health,
+  .section-logist {
+    background: none !important;
+  }
+
+  .mob-bg {
+    display: block;
+    height: 300px;
+    background: url("../img/buyingselling.png") center bottom no-repeat;
+    background-size: contain;
+  }
+  #candySkins {
+    .mob-bg {
+      display: block;
+      height: 300px;
+      background: url("../img/buyingselling-candyskins.png") center bottom no-repeat;
+      background-size: contain;
+    }
+  }
+  #voltic {
+    .mob-bg {
+      display: block;
+      height: 300px;
+      background: url("../img/buyingselling-voltic.png") center bottom no-repeat;
+      background-size: contain;
+    }
+  }
+  #realEstate {
+    .section-statics {
+      padding: 40px 0;
+    }
+    .house {
+      display: none;
+    }
   }
 }
