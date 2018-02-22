@@ -1,0 +1,40 @@
+#realEstate {
+  .holder-section-static {
+    justify-content: flex-end;
+  }
+  .section-statics {
+    position: relative;
+    padding-top: 100px;
+  }
+  .container-inner {
+    position: relative;
+  }
+}
+
+.house {
+  position: absolute;
+  width: 490px;
+  left: 15px;
+  bottom: -56px;
+  .house-top {
+    animation-duration: 2s;
+  }
+  .house-middle {
+    position: absolute;
+    width: 330px;
+    top: 42px;
+    left: 76px;
+    animation-delay: 1s;
+    animation-duration: 2s;
+
+
+  }
+  .house-bottom {
+    position: absolute;
+    width: 50px;
+    top: 120px;
+    left: 217px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+  }
+}

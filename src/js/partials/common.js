@@ -68,12 +68,5 @@ $(document).ready(function () {
 
     $('.card-order .ww').addClass('wow pulse infinite');
 
-    /*$('.form-btn').hover(function () {
-        animate('.phone', 'shake');
-        setTimeout(function () {
-            $('phone').css('visibility', 'hidden');
-        }, 2000);
-        return false;
-    });*/
 
 });
